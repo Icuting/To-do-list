@@ -1,0 +1,40 @@
+@import './fonts/_Fonts.sass'
+//переменные
+$light_background: #918a8a
+$white: #fff
+//body
+body
+  margin: 0
+  padding: 0
+  max-width: 100%
+  max-height: 100%
+  font-family: 'Q Regular', 'Courier New', Arial, monospace
+  font-size: 15pt
+//header
+.header
+  height: 5%
+  background: $light_background
+  display: flex
+.header__logo
+  width: 48px
+  height: 48px
+  margin: 1em
+.header__navBar
+  ul
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    justify-content: space-around
+.header__item-link
+  padding: 1em
+  list-style-type: none
+.header__link
+  text-decoration: none
+  color: $white
+.itemActive
+  transition: 1s
+  text-decoration: underline
+  color: #000
+  //content
+.content
+  width: 80%
+  margin: 3em auto
